@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: column;
+        }
+        .box1, .box2{
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            color: white;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 5px;
+        }
+
+        .box2{
+            background-color: white;
+            color: black;
+        }
+
+        .box3{
+            width: 1000px;
+            height: 700px;
+            background-color: pink;
+            position: relative;
+            margin-left: 20px;
+            padding: 20px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .small-bar{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 40px;
+            background-color: gray;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .bar{
+            width: 150px;
+            height: 30px;
+            background-color: grey;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .bar:last-child, .block:last-child, .small-bar:last-child{
+            margin-right: 0;
+        }
+
+        .bar-container{
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .block-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .block{
+            width: 200px;
+            height: 130px;
+            background-color: aquamarine;
+            color: grey;
+            display: flex;
+            margin-right: 30px;
+            margin-top: 18px;
+            position: relative;
+        }
+
+        .inside-bar{
+            width: 90px;
+            height: 15px;
+            background-color: blue;
+            color: white;
+            bottom: 10px;
+            left: 5px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            position: absolute;
+            display: flex;
+            overflow: hidden;
+            font-size: 10px;
+            padding: 1px 1px;
+        }
+
+        .small-block{
+            display: flex;
+            flex: 0;
+            width: 20px;
+            height: 20px;
+            background-color: grey;
+            color: white;
+            border-radius: 5px;
+            flex: none;
+            margin: 0 5px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .small-block-container{
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class="boxes">
+            <div class = "box1">通识课程</div>
+            <div class = "box2">全部课程</div>
+            <div class = "box2">道德规范力</div>
+            <div class = "box2">审美鉴赏力</div>
+            <div class = "box2">协作领导力</div>
+            <div class = "box2">认知理解力</div>
+            <div class = "box2">应用行动力</div>
+            <div class = "box2">高阶创新力</div>
+            <div class = "box2">沟通表达力</div>
+        </div>
+
+        <div class = "box3">
+        全部课程
+            <div class="bar-container">
+                <div class= "bar">全部</div>
+                <div class= "bar">公共必修课</div>
+                <div class= "bar">公共选修课</div>
+                <div class= "bar">核心选修课</div>
+            </div>
+
+            <div class = "block-container">
+                <div class = "block">
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+                <div class = "block">
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+                <div class = "block">                    
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+                <div class = "block">
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+                <div class = "block">
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+                <div class = "block">
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+                <div class = "block">
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+                <div class = "block">
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+                <div class = "block">
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+                <div class = "block">
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+                <div class = "block">
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+                <div class = "block">
+                    <div class = "inside-bar">公共选修课</div>
+                </div>
+            </div>
+
+            <div class="small-bar">关键词搜索</div>
+
+            <div class = "small-block-container">
+                <div class = "small-block"><</div>
+                <div class = "small-block">1</div>
+                <div class = "small-block">2</div>
+                <div class = "small-block">3</div>
+                <div class = "small-block">4</div>
+                <div class = "small-block">></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
